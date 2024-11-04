@@ -11,9 +11,9 @@ import menu_ from './menu.vue';
 
 <style>
 body{
-  font-family: "Comic Sans MS";
+  font-family: "Arial";
   margin: 0;
-  background-color: black;
+  background-color: rgb(14, 14, 14);
   color: aliceblue ;
   letter-spacing: 1px;
 }

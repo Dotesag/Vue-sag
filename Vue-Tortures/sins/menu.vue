@@ -41,19 +41,22 @@ function List_Control(){
 
 <style>
 .hellotion {
+    font-family: "Comic Sans MS";
     text-align: center;
     background-color: rgb(18, 18, 18);
-    padding: 2%;
+    padding: 1%;
     border: 1px solid rgb(42, 42, 42);
 
 }
 .HeadMessage {
-    margin-bottom: 2%;
+    font-size: 200%;
+    margin-bottom: 1%;
+    color: brown;
 }
 
 button {
     color: aliceblue;
-    font-size: 25px;
+    font-size: 160%;
     background-color: rgb(35, 35, 35);
     border: 1px solid rgb(42, 42, 42);
     padding: 1% 2% 1% 2%;

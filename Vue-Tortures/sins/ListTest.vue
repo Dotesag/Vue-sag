@@ -2,12 +2,16 @@
 import {ref} from 'vue'
 
 let id = 0
+let idToDelete = ''
 const newTodo = ref('')
 const list = ref([
   {id: id++, text: 'Посрать'}
 ])
 function AddElement(){
   list.value.push({id: id++, text: newTodo.value})
+}
+function deleteElementById(){
+  list.value = list.value.filter(id => id.id != Number(idToDelete))
 }
 
 const Beleberda = ref('Beleberda')
@@ -20,8 +24,8 @@ const EditTasks = ref('EditTasks')
     <div :class="Tasks">
       <h1 style="text-align: center;">Задачи на сегодня:</h1>
       <ul>
-        <li v-for="element in list" :key="id">
-          {{ element.text }}
+        <li v-for="element in list" :key="element.id">
+          {{ element.id }} - {{ element.text }}
         </li>
       </ul>
     </div>
@@ -31,7 +35,12 @@ const EditTasks = ref('EditTasks')
       <p>Добавить задачу</p>
       <form @submit.prevent="AddElement">
         <input v-model="newTodo" required placeholder="Введите задачу" >
-        <button>Добавить</button>
+        <button style="width: 23%;">Добавить</button>
+      </form>
+      <p>Удалить задачу</p>
+      <form @submit.prevent="deleteElementById">
+        <input v-model="idToDelete" required placeholder="Введите id" >
+        <button style="width: 23%;">Удалить</button>
       </form>
     </div>
   </div>    
