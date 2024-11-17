@@ -55,7 +55,7 @@ function List_Control(){
 .HeadMessage {
     font-size: 200%;
     margin-bottom: 1%;
-    color: brown;
+    color: rgb(255, 234, 234);
 }
 
 button {
