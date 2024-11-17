@@ -1,6 +1,8 @@
 <script setup>
 import { ref } from 'vue'
 import ListTest from './ListTest.vue';
+import IQ_Test from './IQ-Test.vue';
+import Chat_GPT from './Chat-GPT.vue'
 const hellotion = ref('hellotion')
 const HeadMessage = ref('HeadMessage')
 
@@ -36,6 +38,8 @@ function List_Control(){
             <button @click="List_Control">Работа</button>
         </div>
     </header>
+    <IQ_Test v-if="IQtest" />
+    <Chat_GPT v-if="Chatgpt" />
     <ListTest v-if="List" />
 </template>
 
