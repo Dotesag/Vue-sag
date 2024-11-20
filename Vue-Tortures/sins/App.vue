@@ -11,7 +11,7 @@ import menu_ from './menu.vue';
 
 <style>
 body{
-  font-family: "Roboto";
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   background-color: rgb(14, 14, 14);
   color: aliceblue ;

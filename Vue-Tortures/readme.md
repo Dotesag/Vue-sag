@@ -1,6 +1,6 @@
-Запуск:
-    npm i
-    npm run dev
-Отправка на хост Firebase:
-    npm run build
-    firebase serve
+Запуск: <br>
+    npm i <br>
+    npm run dev <br>
+Отправка на хост Firebase: <br>
+    npm run build <br>
+    firebase serve <br>
